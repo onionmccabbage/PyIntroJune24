@@ -24,3 +24,17 @@ l = ['hello', 432, True, a, b, s, 42] # this makes a list collection (like an ar
 print(l[0:5:2], type(l))
 t = (67456, False, 'ummmm', 54.32, l, b, 9) # a tuple is an immutable zero-based collection of any data types
 print(t[3:6:3], type(t))
+
+# we may mutate a list
+l[0] = 'coffee time' # here we change the content of the item at position zero in the list
+l.append(False) # place the item on the end of the existing list
+l.insert(3, 'three') # insert at position 3
+print(l)
+
+# iterating over collections
+for letter in s:
+    print(letter)
+for item in l:
+    print(item)
+for item in t:
+    print(item)
