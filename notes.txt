@@ -33,6 +33,9 @@ Python code essentials
     - range object
     - after lunch: review exercise
 
+
+q - how can we show numbers to a certain accruacy
+
 Python datatypes and variables
     - Master the application of branching constructs for decision-making in code
     - Main Collection Types: List, Tuple, Set, Dict
@@ -62,5 +65,8 @@ architecture and best practice, design patterns. Also testing
 
 Skillnet NI forms
 - make sure these are completed
+
+All my code will be here:
+https://github.com/onionmccabbage/PyIntroJune24
 
 End of course feedback
