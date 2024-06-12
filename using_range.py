@@ -13,4 +13,7 @@ for _ in e: # we can use anything for our iterable, Python often uses _
 squares = [i*i for i in range(0,11)] # we have a list
 print(squares, type(squares))
 
-# using
+# using conditional logic
+r = input() # stop and get the user to type something (this is I/O bound)
+if r == 'hello':
+    print('and hello to you too!')
