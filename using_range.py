@@ -14,6 +14,13 @@ squares = [i*i for i in range(0,11)] # we have a list
 print(squares, type(squares))
 
 # using conditional logic
-r = input() # stop and get the user to type something (this is I/O bound)
-if r == 'hello':
+# EVERY input is ALWAYS a string (never anything else)
+r = input('Enter something: ') # stop and get the user to type something (this is I/O bound)
+if r == 'hello': # we use == to check equality. Also != for not equal <, > <=, >= also
     print('and hello to you too!')
+elif r =='greetings':
+    print('Well hi there')
+elif 'hi' in r: # we often use 'in' to check if a mamber is in a collection
+    print('I think you said hi')
+else:
+    print(f'Well I dont understand {r}')
