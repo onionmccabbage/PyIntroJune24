@@ -10,5 +10,12 @@ print(c)
 t = (5,4,3,2)
 l = list(t) # convert it to a list
 # remember, every input is a string... so if we need an int...
-i = int(float(input('enter an integer ')))
-print(f'You entered {i}')
+try: # we should use try around any dodgy code
+    i = int(float(input('enter an integer ')))
+    print(f'You entered {i}')
+except ValueError as ve: # we may choose to handle specific faults
+    print('That is not an integer!!')
+except Exception as err: # here we handle any exception
+    print(f'Something went wrong {err}')
+finally: # this is optional - but can be handy
+    print('All done') # finally will ALWAYS run (even if ther is an exception)
