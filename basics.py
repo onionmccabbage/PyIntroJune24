@@ -45,10 +45,19 @@ my_set = {2,3,3,5,7.0,'any',3,8,2} # a set is a mutable collection of any types.
 my_set.add(4) # we can mutate a set
 print(my_set, type(my_set))
 # dictionary is a non-indexed mutable collection of key:value pairs of any data type
-d = {'n':'Floella', 'level':'Admin', 'auth':True, 'age':64}
+d = {'n':'Floella', 'level':'Admin', 'auth':True, 'age':64, 'age':99} # the last key-value persist
 d['def'] = None # add to the dict
 d['auth'] = False # mutate an existing member
 print(d, type(d))
 # dict has no numeric index, so we iterate like this:
-for (k,v) in d: # k will be the keys, v will be the values
-    print(k, v)
+for (k,v) in d.items(): # k will be the keys, v will be the values
+    # we can use formatted strings for pretty printing
+    print(f'we have {k} with {v}') # inject any variable using {}
+    # print(k, v)
+
+# we can print a csv like this
+for i in l: # iterate over our list
+    print(i,end=', ') # by default print will end with a new line. Wecan put anything we like instead
+
+# ooo whats this...?
+print(__name__) # we get __main__ when this module is run directly

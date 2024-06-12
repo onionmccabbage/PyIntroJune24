@@ -58,7 +58,9 @@ Introduction to Functional Programming
     - Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
     - Another review exercise
 
-- read write files
+...what about __main__????
+
+- read write files inc write to csv
 
 Future - Jupyter, database, API loading over http, threading, microservices
 architecture and best practice, design patterns. Also testing
