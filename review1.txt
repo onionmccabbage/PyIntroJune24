@@ -1,4 +1,4 @@
-Review 1
+Review 1 50 minutes (until 2:35)
 ========
 Ask the user to enter a guess, until they guess correctly 
 (Guess an integer between 0 and 100)
@@ -11,12 +11,15 @@ When they get it right the game ends
 
 Use documentation, look online, ask me, ask each other...
 
+At the end there will be show and tell
+
 Optional
 --------
 entering -1 quits the game (tell them the answer)
 entering -2 offers hints: is it even, is it odd, is it a square or prime number?
 here is a tuple of primes
 primes_t = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
+if i in primes_t:
+    ...
 Count how many guesses they took, and print this at the end
-
 Maybe ask the user for the game difficulty (0-100, 0-1000 etc.)
