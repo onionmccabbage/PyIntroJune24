@@ -6,7 +6,7 @@ June 2024
 Toby Dussek
 
 9:30 start
-11:00 coffee
+11:00 coffee until 11:15
 12:30 Lunch
 3:00 tea
 4:30 end
@@ -19,11 +19,11 @@ Welcome and Introductions
     python.org documentation
 
 Know your IDE
-    Navigating Projects
+    > Navigating Projects
     - Editing Files
-    - Setting the interpreter for different python versions
+    > Setting the interpreter for different python versions
     - Debugging
-    Shortcuts
+    - Shortcuts
 
 Python code essentials
     Learn effective debugging techniques for identifying and resolving errors

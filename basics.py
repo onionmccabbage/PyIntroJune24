@@ -38,3 +38,17 @@ for item in l:
     print(item)
 for item in t:
     print(item)
+
+# Some other data types: dict, set and none
+n = None # this is a handy type, it means none
+my_set = {2,3,3,5,7.0,'any',3,8,2} # a set is a mutable collection of any types. Unique members only
+my_set.add(4) # we can mutate a set
+print(my_set, type(my_set))
+# dictionary is a non-indexed mutable collection of key:value pairs of any data type
+d = {'n':'Floella', 'level':'Admin', 'auth':True, 'age':64}
+d['def'] = None # add to the dict
+d['auth'] = False # mutate an existing member
+print(d, type(d))
+# dict has no numeric index, so we iterate like this:
+for (k,v) in d: # k will be the keys, v will be the values
+    print(k, v)
