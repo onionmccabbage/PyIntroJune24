@@ -16,6 +16,7 @@ print(squares, type(squares))
 # using conditional logic
 # EVERY input is ALWAYS a string (never anything else)
 r = input('Enter something: ') # stop and get the user to type something (this is I/O bound)
+r = r.lower() # force the string to lower case (or upper)
 if r == 'hello': # we use == to check equality. Also != for not equal <, > <=, >= also
     print('and hello to you too!')
 elif r =='greetings':
