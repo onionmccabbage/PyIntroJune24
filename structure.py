@@ -14,7 +14,8 @@ def main():
         r = makeRandInt()
         print( r )
         if r == 5:
-            break # this will break out of our loop
+            quit # this will end our program
+            break # this will break out of our loop (code keeps running)
 
 # we tend to check if this module is being run directly (rather than imported)
 if __name__ == '__main__':
