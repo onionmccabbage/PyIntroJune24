@@ -7,7 +7,7 @@ Toby Dussek
 
 9:30 start
 11:00 coffee until 11:15
-12:30 Lunch
+12:30 Lunch until 1:30
 3:00 tea
 4:30 end
 
@@ -20,17 +20,17 @@ Welcome and Introductions
 
 Know your IDE
     > Navigating Projects
-    - Editing Files
+    > Editing Files
     > Setting the interpreter for different python versions
     - Debugging
     - Shortcuts
 
 Python code essentials
     Learn effective debugging techniques for identifying and resolving errors
-    - Foundational Concepts: Datatypes, Variables, and Branching Constructs
+    > Foundational Concepts: Datatypes, Variables, and Branching Constructs
     - functions, arguments
-    - conditionals, loops
-    - range object
+    > conditionals, loops
+    > range object
     - after lunch: review exercise
 
 
@@ -38,11 +38,11 @@ q - how can we show numbers to a certain accruacy
 
 Python datatypes and variables
     - Master the application of branching constructs for decision-making in code
-    - Main Collection Types: List, Tuple, Set, Dict
+    > Main Collection Types: List, Tuple, Set, Dict
 
 Python's primary collection types
     - Add, remove elements, and iterate over lists, tuples, sets, and dictionaries.
-    Other python Collections
+    - Other python Collections
 
 Object-Oriented Programming
     - Learn the principles and syntax of Object-Oriented Programming.
