@@ -27,11 +27,14 @@ def getNum():
     else:
         return 'not an even integer'
 
-# we can use rthe function like this
-result = getNum() # we invoke the function
-print(result)
+# we only want to run this if it is the main module (not if its being imported)
+if __name__ == '__main__':
+    print(__name__) # what is this module???
+    # we can use the function like this
+    result = getNum() # we invoke the function
+    print(result)
 
-# we can acces the docstring like this
-print(  getNum.__doc__  )
-# Fact: anything with leading and trailing double underscore is a part of Python (dunder)
+    # we can acces the docstring like this
+    print(  getNum.__doc__  )
+    # Fact: anything with leading and trailing double underscore is a part of Python (dunder)
 
