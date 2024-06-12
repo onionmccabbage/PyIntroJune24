@@ -1,3 +1,9 @@
+# Python includes many functions built in, e.g. range, print, for etc.
+# Python also includes a 'standard library'
+# we can import useful stuff from the standard library
+import time # this comes with Python
+from random import randint # here we pick just one part of the 'random' library
+
 # there are other mathematical operators beyond + / * -
 print( 10//3 ) # the integer number of times we can divide ten by three (modulo)
 print(10%3)    # the remainder when we divide ten by three (remainer)
@@ -19,3 +25,10 @@ except Exception as err: # here we handle any exception
     print(f'Something went wrong {err}')
 finally: # this is optional - but can be handy
     print('All done') # finally will ALWAYS run (even if ther is an exception)
+
+print(time.time()) # now!!
+print(time.localtime()) # now in a human friendly format
+
+# use randint
+r = randint(0,10) # a random integer between 0 and 10 (or any values)
+print(f'The random integer is {r} at {time.localtime()}')
