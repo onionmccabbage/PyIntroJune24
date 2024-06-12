@@ -10,10 +10,15 @@ def printTofile(s):
 
 def writeToFile(s):
     '''commit text to a file using with'''
-    with(open('my_log.txt', 'at') as fout):
-        fout.write(s) # this will write the string to the file access object
-        fout.write('\n') # we may choose to add a new line character
-        # NB when you use 'with' it will automatically close the file when done
+    # 'xt' is exclusive text - fails if the file already exists
+    # 'wt' will (over)write text
+    try: # its a good idea to use try-except when working with external files
+        with(open('my_log.txt', 'at') as fout): 
+            fout.write(s) # this will write the string to the file access object
+            fout.write('\n') # we may choose to add a new line character
+            # NB when you use 'with' it will automatically close the file when done
+    except FileExistsError as fe:
+        print(f'Cannot wite to that file {fe}')
 
 def readFromFile():
     '''read content back in from a text file'''
