@@ -8,14 +8,13 @@ Toby Dussek
 9:30 start
 11:00 coffee until 11:15
 12:30 Lunch until 1:30
-3:00 tea
+3:00 tea until 3:15
 4:30 end
 
 Welcome and Introductions
     What you currently know
     What you want to know
     Course Resources: recordings: usr neueda pwd c0nygre
-    - repo 
     python.org documentation
 
 Know your IDE
@@ -29,12 +28,16 @@ Python code essentials
     Learn effective debugging techniques for identifying and resolving errors
     > Foundational Concepts: Datatypes, Variables, and Branching Constructs
     - functions, arguments
+    - structure
     > conditionals, loops
     > range object
-    - after lunch: review exercise
+    > after lunch: review exercise
 
 
-q - how can we show numbers to a certain accruacy
+q - how can we show numbers to a certain acuracy
+
+- while, break, quit
+- def
 
 Python datatypes and variables
     - Master the application of branching constructs for decision-making in code
@@ -67,6 +70,8 @@ architecture and best practice, design patterns. Also testing
 
 Skillnet NI forms
 - make sure these are completed
+
+for further reference: learnpython.org
 
 All my code will be here:
 https://github.com/onionmccabbage/PyIntroJune24
