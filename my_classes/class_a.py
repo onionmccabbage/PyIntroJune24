@@ -41,7 +41,16 @@ class Volunteer: # NB this is a code block so we MUST indent
             self.__hours = new_hours # all good
         else:
             self.__hours = 0 # we may choose to set a sensible default
-
+    # and the same again for the rate...
+    @property
+    def rate(self):
+        return self.__rate
+    @rate.setter
+    def rate(self, new_rate):
+        if type(new_rate) in (int, float): # here we check if the type is in the tuple of permitted types
+            self.__rate = new_rate
+        else:
+            self.__rate = 1
 
 if __name__ == '__main__':
     '''here we can exercise the code'''
