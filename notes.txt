@@ -11,6 +11,9 @@ Toby Dussek
 3:00 tea until 3:15
 4:30 end
 
+Recordings: (available for a week or two)
+    usr neueda pwd c0nygre
+
 Welcome and Introductions
     What you currently know
     What you want to know
@@ -70,9 +73,10 @@ architecture and best practice, design patterns. Also testing
 Skillnet NI forms
 - make sure these are completed
 
-for further reference: learnpython.org
+for further reference see learnpython.org
 
 All my code will be here:
 https://github.com/onionmccabbage/PyIntroJune24
 
-End of course feedback
+End of course feedback:
+https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/2dd33d42-4de3-47d2-9428-28c2197fe91e 
