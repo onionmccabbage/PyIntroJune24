@@ -16,21 +16,31 @@ class Volunteer: # NB this is a code block so we MUST indent
     def __init__(self, n, hrs, r): # self refers to the instance being created
         '''this runs every time we make an instance of this class'''
         self.name  = n   # this will actually call the name setter method
-        self.hours = hrs
+        self.hours = hrs # we will use getter/setter methods to validate the hours
         self.rate  = r
     # we may write methods of our class
     # A method is something the class can do, (its just a function)
     def totalSponsorship(self):
         return self.hours*self.rate
-    @property
+    @property # this decorator gets the property
     def name(self):
         return self.__name
-    @name.setter # this makes the method behave like a property
+    @name.setter # this makes the method behave like a property (sets the property)
     def name(self, new_name):
         if new_name != '' and type(new_name) == str:
             self.__name = new_name # we use __ for mangled properties
         else:
-            raise TypeError('Name must be a non-emtpy string')
+            raise TypeError('Name must be a non-empty string')
+    @property
+    def hours(self):
+        return self.__hours
+    @hours.setter
+    def hours(self, new_hours):
+        '''the valuee for new_hours must be a potive int or float'''
+        if type(new_hours)==int or type(new_hours)==float:
+            self.__hours = new_hours # all good
+        else:
+            self.__hours = 0 # we may choose to set a sensible default
 
 
 if __name__ == '__main__':
@@ -41,3 +51,6 @@ if __name__ == '__main__':
     # we may see any of the properties of this class instance
     print(v1, v1.name, v1.hours) # we can access properties using dot notation
     print(f'Voluneer {v2.name} did {v2.hours} hours at {v2.rate} total: €{v2.totalSponsorship ()}')
+    # here we will check that the name validates
+    # v1.name = True # this should fail
+    v1.name = 'Ede'
