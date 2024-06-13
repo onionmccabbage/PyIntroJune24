@@ -8,6 +8,8 @@ v_d['rate']=-88 # oops - there is no way to validate the data
 
 # That is one reason to use a class - classes let us validate and manage the data
 class Volunteer: # NB this is a code block so we MUST indent
+# class Volunteer(): # the brackets are optional (by default classes inherit from object)
+# class Volunteer(object): # we may choose to explicitly inherit from another class
     '''Volunteer will encapsulate name (non-empty string)
     the hours volunteered (positive int or float)
     and the sponsor rate (positive int or float)'''
