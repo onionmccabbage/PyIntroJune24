@@ -54,7 +54,7 @@ if __name__ == '__main__':
     # exercise this module
     w_dub = Weather('Dublin', 'rainy', 19.04)
     w_gal = Weather('Galway', 'windy', 16.70)
-    w_lk  = Weather('Letterkenny', 'sunny', 27.98)
+    w_lk  = Weather('Letterkenny', 'hail', 7.98)
    
     print(w_dub.showWeatherReport())
     print(w_gal.showWeatherReport())
@@ -62,6 +62,17 @@ if __name__ == '__main__':
 
     w_default = Weather(False, [], ()) # wrong data types so should fall back to the defaults
     print(w_default.showWeatherReport())
+
+    # how can we have a great number of these class instances
+    weather_list = [] # we have an empty list
+    weather_list.append( Weather('Canberra', 'Sunny', 24) )
+    weather_list.append( Weather('Geneva', 'Overcast', 18) )
+    weather_list.append( Weather('Belfast', 'rain', 12) )
+    weather_list.append( Weather('Cork', 'Rainy', 15) )
+    weather_list.append( Weather('Trallee', 'Sunny', 32) )
+
+    for w in weather_list:
+        print( w.showWeatherReport() )
 
     # commit the reports to a text file
     writeWeatherFile(w_dub)

@@ -2,3 +2,15 @@ The weather in Dublin is rainy at 19.04C
 The weather in Galway is windy at 16.7C
 The weather in Letterkenny is sunny at 27.98C
 The weather in Athlone is  at 12C
+The weather in Dublin is rainy at 19.04C
+The weather in Galway is windy at 16.7C
+The weather in Letterkenny is hail at 7.98C
+The weather in Athlone is  at 12C
+The weather in Dublin is rainy at 19.04C
+The weather in Galway is windy at 16.7C
+The weather in Letterkenny is hail at 7.98C
+The weather in Athlone is  at 12C
+The weather in Dublin is rainy at 19.04C
+The weather in Galway is windy at 16.7C
+The weather in Letterkenny is hail at 7.98C
+The weather in Athlone is  at 12C
