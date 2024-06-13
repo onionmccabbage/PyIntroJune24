@@ -4,7 +4,7 @@ class Weather():
     and a floating point number or integer for the temperature
     '''
     def __init__(self, city, desc, temp):
-        self.city = city
+        self.city = city # remember - this calls the function to set (and validate) the city value
         self.desc = desc
         self.temp = temp
     @property
