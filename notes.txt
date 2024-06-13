@@ -50,8 +50,8 @@ Python's primary collection types
     - Other python Collections
 
 Object-Oriented Programming
-    - Learn the principles and syntax of Object-Oriented Programming.
-    - Understand how to define and use classes and objects in Python.
+    > Learn the principles and syntax of Object-Oriented Programming.
+    > Understand how to define and use classes and objects in Python.
 
 Creating Functions, Modules, and Packages
     - functions and classes are written inside modules (files) which are placed in packages (folders)
@@ -62,6 +62,11 @@ Introduction to Functional Programming
     - Familiarize yourself with functional programming concepts in Python.
     - Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
     - Another review exercise
+
+Packages
+    > just a folder to gather related modules
+    > might contain __init__.py which is no longer needed
+
 
 ...what about __main__????
 
