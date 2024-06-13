@@ -17,6 +17,10 @@ class Volunteer: # NB this is a code block so we MUST indent
         self.name  = n
         self.hours = hrs
         self.rate  = r
+    # we may write methods of our class
+    # A method is something the class can do, (its just a function)
+    def totalSponsorship(self):
+        return self.hours*self.rate
 
 if __name__ == '__main__':
     '''here we can exercise the code'''
@@ -25,4 +29,4 @@ if __name__ == '__main__':
     v2.hours = 83.0 # we can change values stored in class properties
     # we may see any of the properties of this class instance
     print(v1, v1.name, v1.hours) # we can access properties using dot notation
-    print(f'Voluneer {v2.name} did {v2.hours} hours at {v2.rate}')
+    print(f'Voluneer {v2.name} did {v2.hours} hours at {v2.rate} total: €{v2.totalSponsorship ()}')
