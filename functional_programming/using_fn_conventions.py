@@ -29,6 +29,19 @@ def useMap():
     results_l = map(sumDiff, my_values, my_values)
     return results_l
 
+def isOdd(n):
+    '''return True if odd, False otherwise'''
+    if n%2 !=0:
+        return True
+    else:
+        return False
+
+def useFilter():
+    # filter lets us repeatedly use a function to filter the results
+    r = range(-9,10)
+    odds = filter(isOdd, r)
+    return odds
+
 if __name__ == '__main__':
     # execise the code
     print( sumDiff(44, 55) ) # (99, -11)
@@ -40,3 +53,6 @@ if __name__ == '__main__':
     r = useMap()
     for _ in r: # iterate over the map object - see eahc value that has been calculated
         print( _ )
+    o = useFilter() # call our filter function
+    for item in o:
+        print(item)
