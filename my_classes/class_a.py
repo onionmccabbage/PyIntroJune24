@@ -12,15 +12,26 @@ class Volunteer: # NB this is a code block so we MUST indent
     the hours volunteered (positive int or float)
     and the sponsor rate (positive int or float)'''
     # NB all functions in a class MUST take 'self'
+    # we MUST use __init__ for the initializer
     def __init__(self, n, hrs, r): # self refers to the instance being created
         '''this runs every time we make an instance of this class'''
-        self.name  = n
+        self.name  = n   # this will actually call the name setter method
         self.hours = hrs
         self.rate  = r
     # we may write methods of our class
     # A method is something the class can do, (its just a function)
     def totalSponsorship(self):
         return self.hours*self.rate
+    @property
+    def name(self):
+        return self.__name
+    @name.setter # this makes the method behave like a property
+    def name(self, new_name):
+        if new_name != '' and type(new_name) == str:
+            self.__name = new_name # we use __ for mangled properties
+        else:
+            raise TypeError('Name must be a non-emtpy string')
+
 
 if __name__ == '__main__':
     '''here we can exercise the code'''
