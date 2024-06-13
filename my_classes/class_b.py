@@ -9,7 +9,8 @@ class VolunteerGroup(Volunteer):
     RaisedPerMember will be a method'''
     def __init__(self, n, hrs, r, num):
         # we typicaly call the __init__ of the parent class
-        super().__init__(self, n, hrs, r) # just pass the arguments it needs
+        # NB calling super we do NOT pass 'self'
+        super().__init__(n, hrs, r) # just pass the arguments it needs
         self.num = num # this will call our num setter function
     @property
     def num(self):
