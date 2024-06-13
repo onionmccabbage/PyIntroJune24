@@ -63,3 +63,6 @@ if __name__ == '__main__':
     # here we will check that the name validates
     # v1.name = True # this should fail
     v1.name = 'Ede'
+    # see what happens if we use invalid data
+    v3 = Volunteer('Floella', 'ages', False) # this should default to 0 and 1
+    print(f'{v3.name} {v3.hours} {v3.rate}') # Floella 0 1
