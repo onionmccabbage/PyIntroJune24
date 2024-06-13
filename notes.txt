@@ -25,7 +25,7 @@ Know your IDE
     > Editing Files
     > Setting the interpreter for different python versions
     > Debugging
-    - Shortcuts
+    > Shortcuts
 
 Python code essentials
     > Learn effective debugging techniques for identifying and resolving errors
@@ -60,7 +60,7 @@ Creating Functions, Modules, and Packages
 
 Introduction to Functional Programming
     > Familiarize yourself with functional programming concepts in Python.
-    - Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
+    > Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
     > Another review exercise
 
 Packages
